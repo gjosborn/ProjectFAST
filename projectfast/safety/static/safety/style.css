@@ -1,0 +1,100 @@
+/* Define color scheme as CSS custom properties */
+:root {
+    --charcoal-grey: #36454F;
+    --army-green: #4B5320;
+    --slate-grey: #708090;
+    --dusty-black: #0A0A0A;
+    --metallic-silver: #C0C0C0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--charcoal-grey);
+    background-color: var(--metallic-silver);
+}
+
+/* Header Styles */
+header {
+    background: var(--charcoal-grey);
+    color: var(--metallic-silver);
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+.logo {
+    margin-right: auto;  /* This will push the menu to the left */
+}
+
+.logo img {
+    width: 100px; /* Adjust as necessary */
+}
+
+
+
+/* Navigation Menu Styles */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    padding: 0 1em;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #C0C0C0; /* Metallic Silver */
+}
+
+/* Main Content Styles */
+main {
+    background-color: var(--slate-grey);
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dusty-black);
+    color: var(--metallic-silver);
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button Styles */
+button {
+    background-color: var(--army-green);
+    color: var(--metallic-silver);
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--charcoal-grey);
+}
+
+/* Add these styles to your style.css file */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
