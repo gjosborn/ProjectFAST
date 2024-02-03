@@ -22,8 +22,10 @@ KING OF BATTLE!
 
 The project has three main folders.
 
-Django - This folder contains all of the files related to the Django backend which runs the web application.
+projectfast - This folder is the Django project folder with all of the associated files for the web app backend
+
 React - This folder contains all of the files related to the React frontend
+
 etc - This folder is a sort of catch all folder for the project's admin documents. In an effort to keep this project more organized and with a clear priority and direction, I am working on a technical design document and a UI design document to help inform my own development priorities and keep me on track. Those can be found in this directory along with various assets included in the documents such as wireframes/mockups, data and interaction flow diagrams, and database design documents.
 
 ## Updates 
