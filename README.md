@@ -25,3 +25,10 @@ The project has three main folders.
 Django - This folder contains all of the files related to the Django backend which runs the web application.
 React - This folder contains all of the files related to the React frontend
 etc - This folder is a sort of catch all folder for the project's admin documents. In an effort to keep this project more organized and with a clear priority and direction, I am working on a technical design document and a UI design document to help inform my own development priorities and keep me on track. Those can be found in this directory along with various assets included in the documents such as wireframes/mockups, data and interaction flow diagrams, and database design documents.
+
+## Updates 
+ I spent some time putting more research into setting this project up the right way and want to make note of my next steps here. I am going to use Django with Django-Rest-Framework to interact with the react frontend and send requests with Axios. My first effort will be implementing users and a registration/login since that won't be much technical challenge on the Django side and will let me experiment with React and Axios to call the API.
+
+ Additionally, I am going to Docker-ize this project just to prevent any environment/dependency issues, so I will be adding a docker-compose file. Im not sure what will be after that but I'll go from there.
+
+ 
