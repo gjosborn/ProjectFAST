@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  django-backend:
+    build: ./django
+    volumes:
+      - ./django/api:/app
+      - ./django/api/db.sqlite3:/app/db.sqlite3
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1  # Set this to 0 in production
+
+  react-frontend:
+    build: ./react
+    volumes:
+      - ./react/fast:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development  # Set this to production in production
+    stdin_open: true
+    tty: true
+
+volumes:
+  sqlite_data:

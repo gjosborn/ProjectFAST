@@ -1,4 +1,5 @@
 # Project FAST
+**Field Artillery Safety Trainer**
 *A web application that provides a testing/practice suite for manual artillery gunnery*
 
 
@@ -22,15 +23,15 @@ KING OF BATTLE!
 
 The project has three main folders.
 
-projectfast - This folder is the Django project folder with all of the associated files for the web app backend
+django - This folder contains the relevant files for the django backend. It looks like a normal django project in this folder
 
-React - This folder contains all of the files related to the React frontend
+react - This folder contains the relevant files for the react frontend. It looks like a normal react app within this folder
 
-etc - This folder is a sort of catch all folder for the project's admin documents. In an effort to keep this project more organized and with a clear priority and direction, I am working on a technical design document and a UI design document to help inform my own development priorities and keep me on track. Those can be found in this directory along with various assets included in the documents such as wireframes/mockups, data and interaction flow diagrams, and database design documents.
+etc - This folder contains anything not in the first two folders, mostly admin files. I originally created a technical design doc for some practice but I don't think it's particularly necessary for this project and project overhead sucks the fun out of development, so it's just coding from now on.
 
 ## Updates 
  I spent some time putting more research into setting this project up the right way and want to make note of my next steps here. I am going to use Django with Django-Rest-Framework to interact with the react frontend and send requests with Axios. My first effort will be implementing users and a registration/login since that won't be much technical challenge on the Django side and will let me experiment with React and Axios to call the API.
 
- Additionally, I am going to Docker-ize this project just to prevent any environment/dependency issues, so I will be adding a docker-compose file. Im not sure what will be after that but I'll go from there.
+I created working Dockerfiles and a docker-compose for the react and django apps so they can be run all at once.
 
  
