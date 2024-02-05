@@ -1,5 +1,5 @@
 # Project FAST
-**Field Artillery Safety Trainer**
+**Field Artillery Safety Trainer**\
 *A web application that provides a testing/practice suite for manual artillery gunnery*
 
 
@@ -30,8 +30,6 @@ react - This folder contains the relevant files for the react frontend. It looks
 etc - This folder contains anything not in the first two folders, mostly admin files. I originally created a technical design doc for some practice but I don't think it's particularly necessary for this project and project overhead sucks the fun out of development, so it's just coding from now on.
 
 ## Updates 
- I spent some time putting more research into setting this project up the right way and want to make note of my next steps here. I am going to use Django with Django-Rest-Framework to interact with the react frontend and send requests with Axios. My first effort will be implementing users and a registration/login since that won't be much technical challenge on the Django side and will let me experiment with React and Axios to call the API.
-
-I created working Dockerfiles and a docker-compose for the react and django apps so they can be run all at once.
+I am now developing this through a Docker Compose which you can find in the repository. I changed the names in Django for some added clarity. My next steps will be expanding the Django code for some added User functionality within the API and then interacting with the API through the React front end which up to this point has not been touched.
 
  
